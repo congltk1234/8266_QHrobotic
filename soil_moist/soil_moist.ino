@@ -1,12 +1,11 @@
-const int SOIL_MOIST_PIN = A0;
+const int SOIL_MOIST_PIN = A2;
 int soilMoist;
 
 void setup() {
   // put your setup code here, to run once:
-  Serial.begin(115200);
+  Serial.begin(9600);
 
 }
-//https://lamchucongnghe.com/huong-dan-esp8266-5-cam-bien-do-am-dat-va-ung-dung
 
 void loop() {
   soilMoist = getSoilMoist();
